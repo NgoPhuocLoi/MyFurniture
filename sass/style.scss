@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    height: 1500px;
+    &::-webkit-scrollbar{
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #444; 
+        border-radius: 10px;
+    }
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@import './variables';
+@import './header';
+@import './slider';
+@import './products';
+@import './promotional-product';
+@import './banner';
+@import './product-classification';
+@import './banner-ads';
+@import './news';
+@import './partners';
+@import './footer';
+@import './fixed-sidebar';
+@import './modal-form';
+@import './modal-sidebar';
+@import './responsive';
+@import './mobile-support';
+

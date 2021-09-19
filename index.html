@@ -1,0 +1,2623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Furniture</title>
+    <link rel="stylesheet" href="./sass/css/grid-library.css">
+    <link rel="stylesheet" href="./sass/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+</head>
+<body>
+        <!-- header -->
+        <header class="header">
+            <div class="header-container">
+                <a href="#" class="header-logo">
+                    <img src="./images/logo.png" alt="">
+                </a>
+                <div class="header-search hide-on-smallScreen">
+                    <input type="text" class="header-search__input" placeholder="Searching...">
+                        <ion-icon name="search-outline" class="header-search__btn"></ion-icon>
+                </div>
+                <div class="header-contact hide-on-smallScreen">
+                    <a href="">
+                        <ion-icon name="call-outline" class="header-contact__icon"></ion-icon>
+                    </a>
+                    <div class="header-contact__info">
+                        Hotline: <a href="">0912345678</a>
+                    </div>
+                </div>
+                <div class="header-user">
+                    <div class="header-user__item">
+                        <ion-icon name="person-outline" class="header-user__acc"></ion-icon>
+                    </div>
+                    <div class="header-user__item">
+                        <ion-icon name="heart-outline" class="header-user__liked"></ion-icon>
+                        <span class="header-user__item-count">0</span>
+                    </div>
+                    <div class="header-user__item">
+                        <ion-icon name="bag-outline" class="header-user__cart"></ion-icon>
+                        <span class="header-user__item-count">0</span>
+                    </div>
+                    <div class="header-user__item">
+                        <ion-icon name="shuffle-outline" class="header-user__compare"></ion-icon>
+                        <span class="header-user__item-count">0</span>
+                    </div>
+                    <div class="header-user__item ">
+                        <ion-icon name="menu-outline" class="header-user__mobile-menu show-on-smallScreen"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <nav class="header-nav hide-on-smallScreen">
+                <div class="header-category">
+                    <div class="header-category__heading">
+                        <ion-icon name="menu-outline" class="header-category__icon"></ion-icon>
+                        <span class="header-category__text">CATEGORY</span>
+                    </div>
+                    <ul class="header-category__list">
+                        <li class="header-category__item">
+                            <a href="" class="header-category__link">
+                                <img src="./images/header-left-menu/image1.png" class="header-category__link-img" alt="">
+                                <span class="header-category__link-title">Living Room</span>
+                                <ion-icon name="chevron-forward-outline" class="header-category__right-icon"></ion-icon>
+                            </a>
+
+                            <div class="header-category__subMenu">
+                                <div class="grid">
+                                    <div class="row">
+                                        <div class="col l-2-4">
+                                            <h4 class="header-category__subMenu-title">
+                                                <a href="#" class="header-category__subMenu-title-link">Basic furniture</a>
+                                            </h4>
+                                            <ul class="header-category__subMenu-list">
+                                                <li class="header-category__subMenu-item">
+                                                    <a href="#" class="header-category__subMenu-link">Tea table</a>
+                                                </li>
+                                                <li class="header-category__subMenu-item">
+                                                    <a href="#" class="header-category__subMenu-link">TV shelf</a>
+                                                </li>
+                                                <li class="header-category__subMenu-item">
+                                                    <a href="#" class="header-category__subMenu-link">Sofa</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col l-2-4">
+                                            <h4 class="header-category__subMenu-title">
+                                                <a href="#" class="header-category__subMenu-title-link">Table</a>
+                                            </h4>
+                                            <ul class="header-category__subMenu-list">
+                                                <li class="header-category__subMenu-item">
+                                                    <a href="#" class="header-category__subMenu-link">Tea table</a>
+                                                </li>
+                                                <li class="header-category__subMenu-item">
+                                                    <a href="#" class="header-category__subMenu-link">Side table</a>
+                                                </li>
+                                                <li class="header-category__subMenu-item">
+                                                    <a href="#" class="header-category__subMenu-link">Dressing table</a>
+                                                </li>
+                                                <li class="header-category__subMenu-item">
+                                                    <a href="#" class="header-category__subMenu-link">Mini table</a>
+                                                </li>
+                                                <li class="header-category__subMenu-item">
+                                                    <a href="#" class="header-category__subMenu-link">Dining table</a>
+                                                </li>
+                                                <li class="header-category__subMenu-item">
+                                                    <a href="#" class="header-category__subMenu-link">Work table</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col l-2-4">
+                                            <h4 class="header-category__subMenu-title">
+                                                <a href="#" class="header-category__subMenu-title-link">Chair</a>
+                                            </h4>
+                                            <ul class="header-category__subMenu-list">
+                                                <li class="header-category__subMenu-item">
+                                                    <a href="#" class="header-category__subMenu-link">Living room chair</a>
+                                                </li>
+                                                <li class="header-category__subMenu-item">
+                                                    <a href="#" class="header-category__subMenu-link">Dining chair</a>
+                                                </li>
+                                                <li class="header-category__subMenu-item">
+                                                    <a href="#" class="header-category__subMenu-link">Bar chair</a>
+                                                </li>
+                                                <li class="header-category__subMenu-item">
+                                                    <a href="#" class="header-category__subMenu-link">Bench</a>
+                                                </li>
+                                                <li class="header-category__subMenu-item">
+                                                    <a href="#" class="header-category__subMenu-link">Beanbag chair</a>
+                                                </li>
+                                                <li class="header-category__subMenu-item">
+                                                    <a href="#" class="header-category__subMenu-link">Office Chair</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col l-2-4">
+                                            <h4 class="header-category__subMenu-title">
+                                                <a href="#" class="header-category__subMenu-title-link">Cabinet</a>
+                                            </h4>
+                                            <ul class="header-category__subMenu-list">
+                                                <li class="header-category__subMenu-item">
+                                                    <a href="#" class="header-category__subMenu-link">Book shelf</a>
+                                                </li>
+                                                <li class="header-category__subMenu-item">
+                                                    <a href="#" class="header-category__subMenu-link">Wardrobe</a>
+                                                </li>
+                                                <li class="header-category__subMenu-item">
+                                                    <a href="#" class="header-category__subMenu-link">Smart cabinet</a>
+                                                </li>
+                                                <li class="header-category__subMenu-item">
+                                                    <a href="#" class="header-category__subMenu-link">Drawer</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col l-2-4">
+                                            <img src="./images/header-left-menu/living-room-img.jpg" alt="" class="header-category__subMenu-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header-category__item">
+                            <a href="" class="header-category__link">
+                                <img src="./images/header-left-menu/image2.png" class="header-category__link-img" alt="">
+                                <span class="header-category__link-title">Bedroom</span>
+                            </a>
+                        </li>
+                        <li class="header-category__item">
+                            <a href="" class="header-category__link">
+                                <img src="./images/header-left-menu/image3.png" class="header-category__link-img" alt="">
+                                <span class="header-category__link-title">Dining Room</span>
+                                <ion-icon name="chevron-forward-outline" class="header-category__right-icon"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="header-category__item">
+                            <a href="" class="header-category__link">
+                                <img src="./images/header-left-menu/image4.png" class="header-category__link-img" alt="">
+                                <span class="header-category__link-title">Work Room</span>
+                            </a>
+                        </li>
+                        <li class="header-category__item">
+                            <a href="" class="header-category__link">
+                                <img src="./images/header-left-menu/image5.png" class="header-category__link-img" alt="">
+                                <span class="header-category__link-title">Baby Room</span>
+                            </a>
+                        </li>
+                        <li class="header-category__item">
+                            <a href="" class="header-category__link">
+                                <img src="./images/header-left-menu/image6.png" class="header-category__link-img" alt="">
+                                <span class="header-category__link-title">Bathroom</span>
+                            </a>
+                        </li>
+                        <li class="header-category__item">
+                            <a href="" class="header-category__link">
+                                <img src="./images/header-left-menu/image7.png" class="header-category__link-img" alt="">
+                                <span class="header-category__link-title">Kitchen</span>
+                            </a>
+                        </li>
+                        <li class="header-category__item">
+                            <a href="" class="header-category__link">
+                                <img src="./images/header-left-menu/image8.png" class="header-category__link-img" alt="">
+                                <span class="header-category__link-title">Reading Room</span>
+                            </a>
+                        </li>
+                        <li class="header-category__item">
+                            <a href="" class="header-category__link">
+                                <img src="./images/header-left-menu/image9.png" class="header-category__link-img" alt="">
+                                <span class="header-category__link-title">Entertainment Room</span>
+                            </a>
+                        </li>
+                        <li class="header-category__item">
+                            <a href="" class="header-category__link">
+                                <img src="./images/header-left-menu/image10.png" class="header-category__link-img" alt="">
+                                <span class="header-category__link-title">Common Room</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="header-menu">
+                    <li class="header-menu__item">
+                        <a href="" class="header-menu__link">
+                            <span class="header-menu__link-title">Home</span>
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="" class="header-menu__link">
+                            <span class="header-menu__link-title">Decorations</span>
+                            <ion-icon name="chevron-down-outline" class="header-menu__link-icon"></ion-icon>
+                        </a>
+
+                        <div class="header-subMenu">
+                            <div class="header-subMenu__content percent-30-70">
+                                <ul class="header-subMenu__content-list" >
+                                    <div class="header-subMenu__content-list-wrap">
+                                        <li class="header-subMenu__content-item">
+                                            <a href="" class="header-subMenu__content-link">Mirror</a>
+                                            <ion-icon name="chevron-forward-outline" class="header-subMenu__content-rightIcon"></ion-icon>
+                                        
+                                        </li>
+
+                                        <ul class="header-subMenu__content-subList">
+                                            <li class="header-subMenu__content-item">
+                                                <a href="" class="header-subMenu__content-link">Mirror on wall</a>
+                                            </li>
+                                            <li class="header-subMenu__content-item">
+                                                <a href="" class="header-subMenu__content-link">Full-length mirror</a>
+                                            </li>
+                                            <li class="header-subMenu__content-item">
+                                                <a href="" class="header-subMenu__content-link">Makeup mirror</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-subMenu__content-list-wrap">
+                                        <li class="header-subMenu__content-item">
+                                            <a href="" class="header-subMenu__content-link">Clock</a>
+                                            <ion-icon name="chevron-forward-outline" class="header-subMenu__content-rightIcon"></ion-icon>
+                                        
+                                        </li>
+
+                                        <ul class="header-subMenu__content-subList">
+                                            <li class="header-subMenu__content-item">
+                                                <a href="" class="header-subMenu__content-link">Clock watcher</a>
+                                            </li>
+                                            <li class="header-subMenu__content-item">
+                                                <a href="" class="header-subMenu__content-link">Alarm clock</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-subMenu__content-list-wrap">
+                                        <li class="header-subMenu__content-item">
+                                            <a href="" class="header-subMenu__content-link">Picture</a>
+                                            <!-- <ion-icon name="chevron-forward-outline" class="header-subMenu__content-rightIcon"></ion-icon> -->
+                                        
+                                        </li>
+
+                                        <ul class="header-subMenu__content-subList">
+                                            <!-- <li class="header-subMenu__content-item">
+                                                <a href="" class="header-subMenu__content-link">Clock watcher</a>
+                                            </li>
+                                            <li class="header-subMenu__content-item">
+                                                <a href="" class="header-subMenu__content-link">Alarm clock</a>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                    <div class="header-subMenu__content-list-wrap">
+                                        <li class="header-subMenu__content-item">
+                                            <a href="" class="header-subMenu__content-link">Candle</a>
+                                            <!-- <ion-icon name="chevron-forward-outline" class="header-subMenu__content-rightIcon"></ion-icon> -->
+                                        
+                                        </li>
+
+                                        <ul class="header-subMenu__content-subList">
+                                            <!-- <li class="header-subMenu__content-item">
+                                                <a href="" class="header-subMenu__content-link">Clock watcher</a>
+                                            </li>
+                                            <li class="header-subMenu__content-item">
+                                                <a href="" class="header-subMenu__content-link">Alarm clock</a>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                    <div class="header-subMenu__content-list-wrap">
+                                        <li class="header-subMenu__content-item">
+                                            <a href="" class="header-subMenu__content-link">Oil</a>
+                                            <!-- <ion-icon name="chevron-forward-outline" class="header-subMenu__content-rightIcon"></ion-icon> -->
+                                        
+                                        </li>
+
+                                        <ul class="header-subMenu__content-subList">
+                                            <!-- <li class="header-subMenu__content-item">
+                                                <a href="" class="header-subMenu__content-link">Clock watcher</a>
+                                            </li>
+                                            <li class="header-subMenu__content-item">
+                                                <a href="" class="header-subMenu__content-link">Alarm clock</a>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                    <div class="header-subMenu__content-list-wrap">
+                                        <li class="header-subMenu__content-item">
+                                            <a href="" class="header-subMenu__content-link">Trees</a>
+                                            <!-- <ion-icon name="chevron-forward-outline" class="header-subMenu__content-rightIcon"></ion-icon> -->
+                                        
+                                        </li>
+
+                                        <ul class="header-subMenu__content-subList">
+                                            <!-- <li class="header-subMenu__content-item">
+                                                <a href="" class="header-subMenu__content-link">Clock watcher</a>
+                                            </li>
+                                            <li class="header-subMenu__content-item">
+                                                <a href="" class="header-subMenu__content-link">Alarm clock</a>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                    <div class="header-subMenu__content-list-wrap">
+                                        <li class="header-subMenu__content-item">
+                                            <a href="" class="header-subMenu__content-link">Vase os flower</a>
+                                            <!-- <ion-icon name="chevron-forward-outline" class="header-subMenu__content-rightIcon"></ion-icon> -->
+                                        
+                                        </li>
+
+                                        <ul class="header-subMenu__content-subList">
+                                            <!-- <li class="header-subMenu__content-item">
+                                                <a href="" class="header-subMenu__content-link">Clock watcher</a>
+                                            </li>
+                                            <li class="header-subMenu__content-item">
+                                                <a href="" class="header-subMenu__content-link">Alarm clock</a>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="header-subMenu__image-area percent-30-70">
+                                <img src="./images/lamp1.jpg" alt="" class="header-subMenu__image">
+                                <img src="./images/lamp2.jpg" alt="" class="header-subMenu__image">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="" class="header-menu__link">
+                            <span class="header-menu__link-title">Houseware</span>
+                            <ion-icon name="chevron-down-outline" class="header-menu__link-icon"></ion-icon>
+                        </a>
+
+                        <div class="header-subMenu">
+                            <div class="header-subMenu__content percent-20-80">
+                                <ul class="header-subMenu__content-list" >
+                                    <li class="header-subMenu__content-item">
+                                        <a href="" class="header-subMenu__content-link">Drinking utensils</a>
+                                    </li>
+                                    <li class="header-subMenu__content-item">
+                                        <a href="" class="header-subMenu__content-link">Kitchen utensils</a>
+                                    </li>
+                                    <li class="header-subMenu__content-item">
+                                        <a href="" class="header-subMenu__content-link">Food preservation</a>
+                                    </li>
+                                    <li class="header-subMenu__content-item">
+                                        <a href="" class="header-subMenu__content-link">Tableware </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-subMenu__image-area percent-20-80">
+                                <img src="./images/sofa1.jpg" alt="" class="header-subMenu__image">
+                                <img src="./images/sofa2.jpg" alt="" class="header-subMenu__image">
+                            </div>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="" class="header-menu__link">
+                            <span class="header-menu__link-title">Furniture</span>
+                            <ion-icon name="chevron-down-outline" class="header-menu__link-icon"></ion-icon>
+                        </a>
+
+                        <ul class="header-subCategory">
+                            <li class="header-subCategory__item">
+                                <a href="" class="header-subCategory__link">Lamp<ion-icon name="chevron-forward-outline" class="header-subCategory__icon"></ion-icon></a>
+                                
+                                <ul class="header-subCategory__subList">
+                                    <li class="header-subCategory__item">
+                                        <a href="" class="header-subCategory__link">Night Light </a>
+                                    </li>
+                                    <li class="header-subCategory__item">
+                                        <a href="" class="header-subCategory__link">Decorative Light</a>
+                                    </li>
+                                    <li class="header-subCategory__item">
+                                        <a href="" class="header-subCategory__link">Chandelier</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header-subCategory__item">
+                                <a href="" class="header-subCategory__link">Carpet</a>
+                                
+                            </li>
+                            <li class="header-subCategory__item">
+                                <a href="" class="header-subCategory__link">Duvet</a>
+                            </li>
+                            <li class="header-subCategory__item">
+                                <a href="" class="header-subCategory__link">Pillow</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="" class="header-menu__link">
+                            <span class="header-menu__link-title">Storage</span>
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="" class="header-menu__link">
+                            <span class="header-menu__link-title">Bedding</span>
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="" class="header-menu__link">
+                            <span class="header-menu__link-title">Lamp</span>
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="" class="header-menu__link">
+                            <span class="header-menu__link-title">Carpet</span>
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="" class="header-menu__link">
+                            <span class="header-menu__link-title">News</span>
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="" class="header-menu__link">
+                            <span class="header-menu__link-title">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header-policy">
+                    <div class="header-policy__freeship">
+                        <h5 class="header-policy__freeship-title">Free ship</h5>
+                        <span class="header-freeship-text">Bills over 100.000đ</span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- --------------------------------- -->
+
+        <div class="main">
+            <!-- slider -->
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <div class="slide first">
+                        <img src="./images/slider1.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./images/slider2.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./images/slider3.jpeg" alt="" class="slide-img">
+                    </div>
+                    <!-- auto navigation -->
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                    <!-- --------------- -->
+                    <!-- manual navigation -->
+                    <div class="nav-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>
+                    <!-- ----------------- -->
+                </div>
+            </div>
+            <!-- ----------------------------------- -->
+            <!-- product -->
+            <div class="grid wide">
+                <div class="product-container">
+                    <!-- Featured products -->
+                    <div class="products">
+                        <div class="title">
+                           <h3>Featured products</h3>
+                        </div>
+                        <ion-icon name="chevron-back-outline" class="product-nav-icon product-nav-icon-left"></ion-icon>
+                        <div class="product-main">
+                            <ul class="product-main__list swiper-wrapper">
+                                <li class="product-main__item swiper-slide">
+                                    <a href="" class="product-main__item-thumb">
+                                        <img src="./images/product/product1-a.jpg" alt="">
+                                        <img src="./images/product/product1-b.jpg" alt="">
+                                    </a>
+                                    <div class="product-actions hide-on-mobile" onclick>
+                                        <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                                    </div>
+            
+                                    <a href="" class="product-main__item-name">Laundry bag Ketside</a>
+                                    <div class="product-main__item-price">
+                                        <span class="product-main__item-price-current">2.490.000đ</span>
+                                        <span class="product-main__item-price-old">2.890.000đ</span>
+                                    </div>
+                                </li>
+                                <li class="product-main__item swiper-slide">
+                                    <a href="" class="product-main__item-thumb">
+                                        <img src="./images/product/product2-a.jpg" alt="">
+                                        <img src="./images/product/product2-b.jpg" alt="">
+                                    </a>
+                                    <div class="product-actions hide-on-mobile" onclick>
+                                        <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                                    </div>
+                                    <a href="" class="product-main__item-name">Casette Bag</a>
+                                    <div class="product-main__item-price">
+                                        <span class="product-main__item-price-current">1.990.000đ</span>
+                                        <span class="product-main__item-price-old">2.990.000đ</span>
+                                    </div>
+                                </li>
+                                <li class="product-main__item swiper-slide">
+                                    <a href="" class="product-main__item-thumb">
+                                        <img src="./images/product/product3-a.jpg" alt="">
+                                        <img src="./images/product/product3-b.jpg" alt="">
+                                    </a>
+                                    <div class="product-actions hide-on-mobile" onclick>
+                                        <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                                    </div>
+                                    <a href="" class="product-main__item-name">Laron morror</a>
+                                    <div class="product-main__item-price">
+                                        <span class="product-main__item-price-current">1.990.000đ</span>
+                                        <span class="product-main__item-price-old">2.390.000đ</span>
+                                    </div>
+                                </li>
+                                <li class="product-main__item swiper-slide">
+                                    <a href="" class="product-main__item-thumb">
+                                        <img src="./images/product/product4-a.jpg" alt="">
+                                        <img src="./images/product/product4-b.jpg" alt="">
+                                    </a>
+                                    <div class="product-actions hide-on-mobile" onclick>
+                                        <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                                    </div>
+                                    <a href="" class="product-main__item-name">Picnic Basket</a>
+                                    <div class="product-main__item-price">
+                                        <span class="product-main__item-price-current">1.890.000đ</span>
+                                        <span class="product-main__item-price-old">2.390.000đ</span>
+                                    </div>
+                                </li>
+                                <li class="product-main__item swiper-slide">
+                                    <a href="" class="product-main__item-thumb">
+                                        <img src="./images/product/product5-a.jpg" alt="">
+                                        <img src="./images/product/product5-b.jpg" alt="">
+                                    </a>
+                                    <div class="product-actions hide-on-mobile" onclick>
+                                        <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                                    </div>
+                                    <a href="" class="product-main__item-name">Uchiva Chair</a>
+                                    <div class="product-main__item-price">
+                                        <span class="product-main__item-price-current">1.890.000đ</span>
+                                        <span class="product-main__item-price-old">2.390.000đ</span>
+                                    </div>
+                                </li>
+                                <li class="product-main__item swiper-slide">
+                                    <a href="" class="product-main__item-thumb">
+                                        <img src="./images/product/product6-a.jpg" alt="">
+                                        <img src="./images/product/product6-b.jpg" alt="">
+                                    </a>
+                                    <div class="product-actions hide-on-mobile" onclick>
+                                        <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                                    </div>
+                                    <a href="" class="product-main__item-name">Bernard Chair</a>
+                                    <div class="product-main__item-price">
+                                        <span class="product-main__item-price-current">1.890.000đ</span>
+                                        <span class="product-main__item-price-old">2.390.000đ</span>
+                                    </div>
+                                </li>
+                                <li class="product-main__item swiper-slide">
+                                    <a href="" class="product-main__item-thumb">
+                                        <img src="./images/product/product7-a.jpg" alt="">
+                                        <img src="./images/product/product7-b.jpg" alt="">
+                                    </a>
+                                    <div class="product-actions hide-on-mobile" onclick>
+                                        <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                                    </div>
+                                    <a href="" class="product-main__item-name">About A Chair</a>
+                                    <div class="product-main__item-price">
+                                        <span class="product-main__item-price-current">1.890.000đ</span>
+                                        <span class="product-main__item-price-old">2.390.000đ</span>
+                                    </div>
+                                </li>
+                                <li class="product-main__item swiper-slide">
+                                    <a href="" class="product-main__item-thumb">
+                                        <img src="./images/product/product8-a.jpg" alt="">
+                                        <img src="./images/product/product8-b.jpg" alt="">
+                                    </a>
+                                    <div class="product-actions hide-on-mobile" onclick>
+                                        <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                                    </div>
+                                    <a href="" class="product-main__item-name">A Lounge Chair</a>
+                                    <div class="product-main__item-price">
+                                        <span class="product-main__item-price-current">1.890.000đ</span>
+                                        <span class="product-main__item-price-old">2.390.000đ</span>
+                                    </div>
+                                </li>
+                                <li class="product-main__item swiper-slide">
+                                    <a href="" class="product-main__item-thumb">
+                                        <img src="./images/product/product9-a.jpg" alt="">
+                                        <img src="./images/product/product9-b.jpg" alt="">
+                                    </a>
+                                    <div class="product-actions hide-on-mobile" onclick>
+                                        <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                                    </div>
+                                    <a href="" class="product-main__item-name">Sinker Lamp</a>
+                                    <div class="product-main__item-price">
+                                        <span class="product-main__item-price-current">1.890.000đ</span>
+                                        <span class="product-main__item-price-old">2.390.000đ</span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="swiper-pagination show-on-mobile"></div>
+
+                        </div>
+                        <ion-icon name="chevron-forward-outline" class="product-nav-icon product-nav-icon-right active"></ion-icon>
+                    </div>
+                    <!-- promotional products -->
+                    <div class="promotional-product">
+                        <div class="title">
+                            <h3>Promotional products</h3>
+                        </div>
+                        <ion-icon name="chevron-back-outline" class="promotional-product-navIcon promotional-product-navIcon-prev"></ion-icon>
+                        <div class="promotional-product-wrap">
+                            <ul class="promotional-product__list swiper-wrapper">
+                                <li class="promotional-product__item swiper-slide">
+                                    <span class="promotional-product__saveOff">-20%</span>
+                                    <a href="#" class="promotional-product__thumb">
+                                        <img src="./images/promotional-product/product1-a.jpg" alt="">
+                                        <img src="./images/promotional-product/product1-b.jpg" alt="">
+                                    </a>
+                                    <div class="promotional-product__description">
+                                        <div class="promotional-product__name">Loop Stand Table</div>
+                                        <div class="promotional-product__price">
+                                            <div class="promotional-product__price-old">5.490.000đ</div>
+                                            <div class="promotional-product__price-current">4.990.000đ</div>
+                                        </div>
+                                        <div class="promotional-product__info">
+                                            <table>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td>Acrylic</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Size</td>
+                                                    <td>18x5x10cm</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Weight</td>
+                                                    <td>0.8KG</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lock type</td>
+                                                    <td>Zipper</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="promotional-product__counter">
+                                            <span class="promotional-product__counter-days">
+                                                <b>238</b>
+                                                <br>
+                                                Days
+                                            </span>
+                                            <span class="promotional-product__counter-hours">
+                                                <b>11</b>
+                                                <br>
+                                                Hours
+                                            </span>
+                                            <span class="promotional-product__counter-minutes">
+                                                <b>10</b>
+                                                <br>
+                                                Minutes
+                                            </span>
+                                            <span class="promotional-product__counter-seconds">
+                                                <b>00</b>
+                                                <br>
+                                                Seconds
+                                            </span>
+                                        </div>
+                                        <div class="promotional-product__actions">
+                                            <button>Buy Now</button>
+                                            <button class="hide-on-mobile">Quick view</button>
+                                            <button>Like</button>
+                                            <button>Compare</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="promotional-product__item swiper-slide">
+                                    <span class="promotional-product__saveOff">-20%</span>
+                                    <a href="#" class="promotional-product__thumb">
+                                        <img src="./images/promotional-product/product2-a.jpg" alt="">
+                                        <img src="./images/promotional-product/product2-b.jpg" alt="">
+                                    </a>
+                                    <div class="promotional-product__description">
+                                        <div class="promotional-product__name">Loop Stand Table</div>
+                                        <div class="promotional-product__price">
+                                            <div class="promotional-product__price-old">5.490.000đ</div>
+                                            <div class="promotional-product__price-current">4.990.000đ</div>
+                                        </div>
+                                        <div class="promotional-product__info">
+                                            <table>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td>Acrylic</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Size</td>
+                                                    <td>18x5x10cm</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Weight</td>
+                                                    <td>0.8KG</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lock type</td>
+                                                    <td>Zipper</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="promotional-product__counter">
+                                            <span class="promotional-product__counter-days">
+                                                <b>238</b>
+                                                <br>
+                                                Days
+                                            </span>
+                                            <span class="promotional-product__counter-hours">
+                                                <b>11</b>
+                                                <br>
+                                                Hours
+                                            </span>
+                                            <span class="promotional-product__counter-minutes">
+                                                <b>10</b>
+                                                <br>
+                                                Minutes
+                                            </span>
+                                            <span class="promotional-product__counter-seconds">
+                                                <b>00</b>
+                                                <br>
+                                                Seconds
+                                            </span>
+                                        </div>
+                                        <div class="promotional-product__actions">
+                                            <button>Buy Now</button>
+                                            <button class="hide-on-mobile">Quick view</button>
+                                            <button>Like</button>
+                                            <button>Compare</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="promotional-product__item swiper-slide">
+                                    <span class="promotional-product__saveOff">-20%</span>
+                                    <a href="#" class="promotional-product__thumb">
+                                        <img src="./images/promotional-product/product3-a.jpg" alt="">
+                                        <img src="./images/promotional-product/product3-b.jpg" alt="">
+                                    </a>
+                                    <div class="promotional-product__description">
+                                        <div class="promotional-product__name">Loop Stand Table</div>
+                                        <div class="promotional-product__price">
+                                            <div class="promotional-product__price-old">5.490.000đ</div>
+                                            <div class="promotional-product__price-current">4.990.000đ</div>
+                                        </div>
+                                        <div class="promotional-product__info">
+                                            <table>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td>Acrylic</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Size</td>
+                                                    <td>18x5x10cm</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Weight</td>
+                                                    <td>0.8KG</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lock type</td>
+                                                    <td>Zipper</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="promotional-product__counter">
+                                            <span class="promotional-product__counter-days">
+                                                <b>238</b>
+                                                <br>
+                                                Days
+                                            </span>
+                                            <span class="promotional-product__counter-hours">
+                                                <b>11</b>
+                                                <br>
+                                                Hours
+                                            </span>
+                                            <span class="promotional-product__counter-minutes">
+                                                <b>10</b>
+                                                <br>
+                                                Minutes
+                                            </span>
+                                            <span class="promotional-product__counter-seconds">
+                                                <b>00</b>
+                                                <br>
+                                                Seconds
+                                            </span>
+                                        </div>
+                                        <div class="promotional-product__actions">
+                                            <button>Buy Now</button>
+                                            <button class="hide-on-mobile">Quick view</button>
+                                            <button>Like</button>
+                                            <button>Compare</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="promotional-product__item swiper-slide">
+                                    <span class="promotional-product__saveOff">-20%</span>
+                                    <a href="#" class="promotional-product__thumb">
+                                        <img src="./images/promotional-product/product4-a.jpg" alt="">
+                                        <img src="./images/promotional-product/product4-b.jpg" alt="">
+                                    </a>
+                                    <div class="promotional-product__description">
+                                        <div class="promotional-product__name">Loop Stand Table</div>
+                                        <div class="promotional-product__price">
+                                            <div class="promotional-product__price-old">5.490.000đ</div>
+                                            <div class="promotional-product__price-current">4.990.000đ</div>
+                                        </div>
+                                        <div class="promotional-product__info">
+                                            <table>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td>Acrylic</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Size</td>
+                                                    <td>18x5x10cm</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Weight</td>
+                                                    <td>0.8KG</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lock type</td>
+                                                    <td>Zipper</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="promotional-product__counter">
+                                            <span class="promotional-product__counter-days">
+                                                <b>238</b>
+                                                <br>
+                                                Days
+                                            </span>
+                                            <span class="promotional-product__counter-hours">
+                                                <b>11</b>
+                                                <br>
+                                                Hours
+                                            </span>
+                                            <span class="promotional-product__counter-minutes">
+                                                <b>10</b>
+                                                <br>
+                                                Minutes
+                                            </span>
+                                            <span class="promotional-product__counter-seconds">
+                                                <b>00</b>
+                                                <br>
+                                                Seconds
+                                            </span>
+                                        </div>
+                                        <div class="promotional-product__actions">
+                                            <button>Buy Now</button>
+                                            <button class="hide-on-mobile">Quick view</button>
+                                            <button>Like</button>
+                                            <button>Compare</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="promotional-product__item swiper-slide">
+                                    <span class="promotional-product__saveOff">-20%</span>
+                                    <a href="#" class="promotional-product__thumb">
+                                        <img src="./images/promotional-product/product5-a.jpg" alt="">
+                                        <img src="./images/promotional-product/product5-b.jpg" alt="">
+                                    </a>
+                                    <div class="promotional-product__description">
+                                        <div class="promotional-product__name">Loop Stand Table</div>
+                                        <div class="promotional-product__price">
+                                            <div class="promotional-product__price-old">5.490.000đ</div>
+                                            <div class="promotional-product__price-current">4.990.000đ</div>
+                                        </div>
+                                        <div class="promotional-product__info">
+                                            <table>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td>Acrylic</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Size</td>
+                                                    <td>18x5x10cm</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Weight</td>
+                                                    <td>0.8KG</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lock type</td>
+                                                    <td>Zipper</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="promotional-product__counter">
+                                            <span class="promotional-product__counter-days">
+                                                <b>238</b>
+                                                <br>
+                                                Days
+                                            </span>
+                                            <span class="promotional-product__counter-hours">
+                                                <b>11</b>
+                                                <br>
+                                                Hours
+                                            </span>
+                                            <span class="promotional-product__counter-minutes">
+                                                <b>10</b>
+                                                <br>
+                                                Minutes
+                                            </span>
+                                            <span class="promotional-product__counter-seconds">
+                                                <b>00</b>
+                                                <br>
+                                                Seconds
+                                            </span>
+                                        </div>
+                                        <div class="promotional-product__actions">
+                                            <button>Buy Now</button>
+                                            <button class="hide-on-mobile">Quick view</button>
+                                            <button>Like</button>
+                                            <button>Compare</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="promotional-product__item swiper-slide">
+                                    <span class="promotional-product__saveOff">-20%</span>
+                                    <a href="#" class="promotional-product__thumb">
+                                        <img src="./images/promotional-product/product6-a.jpg" alt="">
+                                        <img src="./images/promotional-product/product6-b.jpg" alt="">
+                                    </a>
+                                    <div class="promotional-product__description">
+                                        <div class="promotional-product__name">Loop Stand Table</div>
+                                        <div class="promotional-product__price">
+                                            <div class="promotional-product__price-old">5.490.000đ</div>
+                                            <div class="promotional-product__price-current">4.990.000đ</div>
+                                        </div>
+                                        <div class="promotional-product__info">
+                                            <table>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td>Acrylic</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Size</td>
+                                                    <td>18x5x10cm</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Weight</td>
+                                                    <td>0.8KG</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lock type</td>
+                                                    <td>Zipper</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="promotional-product__counter">
+                                            <span class="promotional-product__counter-days">
+                                                <b>238</b>
+                                                <br>
+                                                Days
+                                            </span>
+                                            <span class="promotional-product__counter-hours">
+                                                <b>11</b>
+                                                <br>
+                                                Hours
+                                            </span>
+                                            <span class="promotional-product__counter-minutes">
+                                                <b>10</b>
+                                                <br>
+                                                Minutes
+                                            </span>
+                                            <span class="promotional-product__counter-seconds">
+                                                <b>00</b>
+                                                <br>
+                                                Seconds
+                                            </span>
+                                        </div>
+                                        <div class="promotional-product__actions">
+                                            <button>Buy Now</button>
+                                            <button class="hide-on-mobile">Quick view</button>
+                                            <button>Like</button>
+                                            <button>Compare</button>
+                                        </div>
+                                    </div>
+                                </li>
+            
+                            </ul>
+
+                            <div class="swiper-pagination show-on-mobile p_"></div>
+                        </div>
+                        <ion-icon name="chevron-forward-outline" class="promotional-product-navIcon promotional-product-navIcon-next"></ion-icon>
+                    </div>
+                    <!-- New products -->
+                    <div class="products">
+                        <div class="title">
+                           <h3>New products</h3>
+                        </div>
+                        <ion-icon name="chevron-back-outline" class="product-nav-icon product-nav-icon-left"></ion-icon>
+                        <div class="product-main">
+                            <ul class="product-main__list swiper-wrapper">
+                                <li class="product-main__item swiper-slide">
+                                    <a href="" class="product-main__item-thumb test">
+                                        <img src="./images/product/product1-a.jpg" alt="">
+                                        <img src="./images/product/product1-b.jpg" alt="">
+                                    </a>
+                                    <div class="product-actions hide-on-mobile" onclick>
+                                        <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                                    </div>
+            
+                                    <a href="" class="product-main__item-name">Laundry bag Ketside</a>
+                                    <div class="product-main__item-price">
+                                        <span class="product-main__item-price-current">2.490.000đ</span>
+                                        <span class="product-main__item-price-old">2.890.000đ</span>
+                                    </div>
+                                </li>
+                                <li class="product-main__item swiper-slide">
+                                    <a href="" class="product-main__item-thumb">
+                                        <img src="./images/product/product2-a.jpg" alt="">
+                                        <img src="./images/product/product2-b.jpg" alt="">
+                                    </a>
+                                    <div class="product-actions hide-on-mobile" onclick>
+                                        <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                                    </div>
+                                    <a href="" class="product-main__item-name">Casette Bag</a>
+                                    <div class="product-main__item-price">
+                                        <span class="product-main__item-price-current">1.990.000đ</span>
+                                        <span class="product-main__item-price-old">2.990.000đ</span>
+                                    </div>
+                                </li>
+                                <li class="product-main__item swiper-slide">
+                                    <a href="" class="product-main__item-thumb">
+                                        <img src="./images/product/product3-a.jpg" alt="">
+                                        <img src="./images/product/product3-b.jpg" alt="">
+                                    </a>
+                                    <div class="product-actions hide-on-mobile" onclick>
+                                        <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                                    </div>
+                                    <a href="" class="product-main__item-name">Laron morror</a>
+                                    <div class="product-main__item-price">
+                                        <span class="product-main__item-price-current">1.990.000đ</span>
+                                        <span class="product-main__item-price-old">2.390.000đ</span>
+                                    </div>
+                                </li>
+                                <li class="product-main__item swiper-slide">
+                                    <a href="" class="product-main__item-thumb">
+                                        <img src="./images/product/product4-a.jpg" alt="">
+                                        <img src="./images/product/product4-b.jpg" alt="">
+                                    </a>
+                                    <div class="product-actions hide-on-mobile" onclick>
+                                        <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                                    </div>
+                                    <a href="" class="product-main__item-name">Picnic Basket</a>
+                                    <div class="product-main__item-price">
+                                        <span class="product-main__item-price-current">1.890.000đ</span>
+                                        <span class="product-main__item-price-old">2.390.000đ</span>
+                                    </div>
+                                </li>
+                                <li class="product-main__item swiper-slide">
+                                    <a href="" class="product-main__item-thumb">
+                                        <img src="./images/product/product5-a.jpg" alt="">
+                                        <img src="./images/product/product5-b.jpg" alt="">
+                                    </a>
+                                    <div class="product-actions hide-on-mobile" onclick>
+                                        <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                                    </div>
+                                    <a href="" class="product-main__item-name">Uchiva Chair</a>
+                                    <div class="product-main__item-price">
+                                        <span class="product-main__item-price-current">1.890.000đ</span>
+                                        <span class="product-main__item-price-old">2.390.000đ</span>
+                                    </div>
+                                </li>
+                                <li class="product-main__item swiper-slide">
+                                    <a href="" class="product-main__item-thumb">
+                                        <img src="./images/product/product6-a.jpg" alt="">
+                                        <img src="./images/product/product6-b.jpg" alt="">
+                                    </a>
+                                    <div class="product-actions hide-on-mobile" onclick>
+                                        <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                                    </div>
+                                    <a href="" class="product-main__item-name">Bernard Chair</a>
+                                    <div class="product-main__item-price">
+                                        <span class="product-main__item-price-current">1.890.000đ</span>
+                                        <span class="product-main__item-price-old">2.390.000đ</span>
+                                    </div>
+                                </li>
+                                <li class="product-main__item swiper-slide">
+                                    <a href="" class="product-main__item-thumb">
+                                        <img src="./images/product/product7-a.jpg" alt="">
+                                        <img src="./images/product/product7-b.jpg" alt="">
+                                    </a>
+                                    <div class="product-actions hide-on-mobile" onclick>
+                                        <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                                    </div>
+                                    <a href="" class="product-main__item-name">About A Chair</a>
+                                    <div class="product-main__item-price">
+                                        <span class="product-main__item-price-current">1.890.000đ</span>
+                                        <span class="product-main__item-price-old">2.390.000đ</span>
+                                    </div>
+                                </li>
+                                <li class="product-main__item swiper-slide">
+                                    <a href="" class="product-main__item-thumb">
+                                        <img src="./images/product/product8-a.jpg" alt="">
+                                        <img src="./images/product/product8-b.jpg" alt="">
+                                    </a>
+                                    <div class="product-actions hide-on-mobile" onclick>
+                                        <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                                    </div>
+                                    <a href="" class="product-main__item-name">A Lounge Chair</a>
+                                    <div class="product-main__item-price">
+                                        <span class="product-main__item-price-current">1.890.000đ</span>
+                                        <span class="product-main__item-price-old">2.390.000đ</span>
+                                    </div>
+                                </li>
+                                <li class="product-main__item swiper-slide">
+                                    <a href="" class="product-main__item-thumb">
+                                        <img src="./images/product/product9-a.jpg" alt="">
+                                        <img src="./images/product/product9-b.jpg" alt="">
+                                    </a>
+                                    <div class="product-actions hide-on-mobile" onclick>
+                                        <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                        <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                                    </div>
+                                    <a href="" class="product-main__item-name">Sinker Lamp</a>
+                                    <div class="product-main__item-price">
+                                        <span class="product-main__item-price-current">1.890.000đ</span>
+                                        <span class="product-main__item-price-old">2.390.000đ</span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="swiper-pagination show-on-mobile"></div>
+                        </div>
+                        <ion-icon name="chevron-forward-outline" class="product-nav-icon product-nav-icon-right active"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <!-- --------------------------------------- -->
+            <!-- banner -->
+            <div class="banner ">
+                <img src="./images/banner.jpg" alt="" class="banner__img">
+                <div class="banner-info">
+                    <div class="banner-info__percent-saveOff">50%</div>
+                    <div class="banner-info__description">
+                        <h6>Deals of the day</h6>
+                        <h2>Deals of the day</h2>
+                        <a href="">shop now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- ---------------------------------------- -->
+            <!-- product-classification -->
+            <div class="product-classification">    <!-- pcl : product-classification-->
+                <div class="pcl-tabs">
+                    <div class="pcl-tab active">Main group</div>
+                    <div class="pcl-tab">Product group 1</div>
+                    <div class="pcl-tab">Product group 2</div>
+                    <div class="pcl-tab">Product group 3</div>
+                </div>
+                <div class="pcl-content">
+                    <ul class="product-main__list wrap active">
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb test">
+                                <img src="./images/product/product1-a.jpg" alt="">
+                                <img src="./images/product/product1-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile">
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+            
+                            <a href="" class="product-main__item-name">Laundry bag Ketside 1</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">2.490.000đ</span>
+                                <span class="product-main__item-price-old">2.890.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product2-a.jpg" alt="">
+                                <img src="./images/product/product2-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Casette Bag</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.990.000đ</span>
+                                <span class="product-main__item-price-old">2.990.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product3-a.jpg" alt="">
+                                <img src="./images/product/product3-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Laron morror</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.990.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product4-a.jpg" alt="">
+                                <img src="./images/product/product4-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Picnic Basket</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product5-a.jpg" alt="">
+                                <img src="./images/product/product5-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Uchiva Chair</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product6-a.jpg" alt="">
+                                <img src="./images/product/product6-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Bernard Chair</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product7-a.jpg" alt="">
+                                <img src="./images/product/product7-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">About A Chair</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product8-a.jpg" alt="">
+                                <img src="./images/product/product8-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">A Lounge Chair</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="product-main__list wrap">
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product4-a.jpg" alt="">
+                                <img src="./images/product/product4-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Picnic Basket</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product5-a.jpg" alt="">
+                                <img src="./images/product/product5-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Uchiva Chair</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product6-a.jpg" alt="">
+                                <img src="./images/product/product6-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Bernard Chair</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product7-a.jpg" alt="">
+                                <img src="./images/product/product7-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">About A Chair</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product8-a.jpg" alt="">
+                                <img src="./images/product/product8-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">A Lounge Chair</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb test">
+                                <img src="./images/product/product1-a.jpg" alt="">
+                                <img src="./images/product/product1-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+            
+                            <a href="" class="product-main__item-name">Laundry bag Ketside 2</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">2.490.000đ</span>
+                                <span class="product-main__item-price-old">2.890.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product2-a.jpg" alt="">
+                                <img src="./images/product/product2-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Casette Bag</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.990.000đ</span>
+                                <span class="product-main__item-price-old">2.990.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product3-a.jpg" alt="">
+                                <img src="./images/product/product3-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Laron morror</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.990.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="product-main__list wrap">
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb test">
+                                <img src="./images/product/product1-a.jpg" alt="">
+                                <img src="./images/product/product1-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+            
+                            <a href="" class="product-main__item-name">Laundry bag Ketside 3</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">2.490.000đ</span>
+                                <span class="product-main__item-price-old">2.890.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product2-a.jpg" alt="">
+                                <img src="./images/product/product2-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Casette Bag</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.990.000đ</span>
+                                <span class="product-main__item-price-old">2.990.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product3-a.jpg" alt="">
+                                <img src="./images/product/product3-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Laron morror</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.990.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product4-a.jpg" alt="">
+                                <img src="./images/product/product4-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Picnic Basket</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product5-a.jpg" alt="">
+                                <img src="./images/product/product5-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Uchiva Chair</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product6-a.jpg" alt="">
+                                <img src="./images/product/product6-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Bernard Chair</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product7-a.jpg" alt="">
+                                <img src="./images/product/product7-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">About A Chair</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product8-a.jpg" alt="">
+                                <img src="./images/product/product8-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">A Lounge Chair</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="product-main__list wrap">
+            
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product5-a.jpg" alt="">
+                                <img src="./images/product/product5-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Uchiva Chair</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product6-a.jpg" alt="">
+                                <img src="./images/product/product6-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Bernard Chair</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product7-a.jpg" alt="">
+                                <img src="./images/product/product7-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">About A Chair</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product8-a.jpg" alt="">
+                                <img src="./images/product/product8-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">A Lounge Chair</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb test">
+                                <img src="./images/product/product1-a.jpg" alt="">
+                                <img src="./images/product/product1-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+            
+                            <a href="" class="product-main__item-name">Laundry bag Ketside 4</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">2.490.000đ</span>
+                                <span class="product-main__item-price-old">2.890.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product2-a.jpg" alt="">
+                                <img src="./images/product/product2-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Casette Bag</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.990.000đ</span>
+                                <span class="product-main__item-price-old">2.990.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product3-a.jpg" alt="">
+                                <img src="./images/product/product3-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Laron morror</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.990.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                        <li class="product-main__item">
+                            <a href="" class="product-main__item-thumb">
+                                <img src="./images/product/product4-a.jpg" alt="">
+                                <img src="./images/product/product4-b.jpg" alt="">
+                            </a>
+                            <div class="product-actions hide-on-mobile" onclick>
+                                <div class="product-action product-action-addToCart"><ion-icon name="bag-add-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action"><ion-icon name="search-circle-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-like"><ion-icon name="heart-outline" class="product-action__icon"></ion-icon></div>
+                                <div class="product-action product-action-compare"><ion-icon name="shuffle-outline" class="product-action__icon"></ion-icon></div>
+                            </div>
+                            <a href="" class="product-main__item-name">Picnic Basket</a>
+                            <div class="product-main__item-price">
+                                <span class="product-main__item-price-current">1.890.000đ</span>
+                                <span class="product-main__item-price-old">2.390.000đ</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ------------------------------------------- -->
+            <!-- banner ads -->
+            <div class="banner-ads">
+                <a href="#" class="banner-ads__item">
+                    <img src="./images/banner-ads-1.jpg" alt="" class="banner-ads__thumb">
+                    <div class="banner-ads__content">
+                        <div class="banner-ads__content-title">Selling Product</div>
+                        <div class="banner-ads__content-name">New Chair Designs</div>
+                    </div>
+                </a>
+                <a href="#" class="banner-ads__item">
+                    <img src="./images/banner-ads-2.jpg" alt="" class="banner-ads__thumb">
+                    <div class="banner-ads__content">
+                        <div class="banner-ads__content-title">New Product</div>
+                        <div class="banner-ads__content-name">Office Cupboards</div>
+                    </div>
+                </a>
+            </div>
+            <!-- ----------------------------------------- -->
+            <!-- News -->
+            <div class="news ">
+                <div class="title">
+                    <h3>News</h3>
+                </div>
+            
+                <div class="news-container">
+                    <ion-icon name="chevron-back-outline" class="news-navBtn news-navBtn-prev"></ion-icon>
+                    <ul class="news-list swiper-wrapper">
+                        <li class="news-item swiper-slide">
+                            <a href="" class="news-item__thumb">
+                                <img src="./images/news/news-img-1.jpg" alt="">
+                            </a>
+                            <div class="news-item__content">
+                                <div class="news-item__content-info">
+                                    <div class="news-item__content-info-author">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        Author: NPLoi /
+                                    </div>
+                                    <div class="news-item__content-info-date">
+                                        <ion-icon name="calendar-outline"></ion-icon>
+                                        12/09/2021
+                                    </div>
+                                </div>
+                                <a href="" class="news-item__content-title">
+                                    Ward gets behind Houston Furniture Bank’s new North Furniture Outlet
+                                </a>
+                                <div class="news-item__content-description">
+                                    HOUSTON — Bill Ward, a well-known and well-respected icon of the furniture industry, is bringing his years as a driving force in the furniture industry to help make the Houston Furniture Bank’s newly-opened North Furniture Outlet here a resounding success.
+                                </div>
+                                <a href="" class="news-item__content-showMoreBtn">Detail <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                            </div>
+                        </li>
+                        <li class="news-item swiper-slide">
+                            <a href="" class="news-item__thumb">
+                                <img src="./images/news/news-img-2.jpg" alt="">
+                            </a>
+                            <div class="news-item__content">
+                                <div class="news-item__content-info">
+                                    <div class="news-item__content-info-author">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        Author: NPLoi /
+                                    </div>
+                                    <div class="news-item__content-info-date">
+                                        <ion-icon name="calendar-outline"></ion-icon>
+                                        12/09/2021
+                                    </div>
+                                </div>
+                                <a href="" class="news-item__content-title">
+                                    Javi Home: The Reliable, Flexible Rug Manufacturer That Retailers and Importers Need
+                                </a>
+                                <div class="news-item__content-description">
+                                    A rug retailer or importer needs a reliable manufacturer; that is where Javi Home comes in. Javi Home is a young team of professionals and one of the premier manufacturing & exporting companies. We produce rug collections using a range of techniques such as Hand-Knotted, Hand-Woven, Hand Loom, Hand-tufted,. For the past ten years, we have delivered excellent results to over 400 customers in more than 67 countries, building trust and partnerships along the way.
+                                </div>
+                                <a href="" class="news-item__content-showMoreBtn">Detail <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                            </div>
+                        </li>
+                        <li class="news-item swiper-slide">
+                            <a href="" class="news-item__thumb">
+                                <img src="./images/news/news-img-3.jpg" alt="">
+                            </a>
+                            <div class="news-item__content">
+                                <div class="news-item__content-info">
+                                    <div class="news-item__content-info-author">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        Author: NPLoi /
+                                    </div>
+                                    <div class="news-item__content-info-date">
+                                        <ion-icon name="calendar-outline"></ion-icon>
+                                        12/09/2021
+                                    </div>
+                                </div>
+                                <a href="" class="news-item__content-title">
+                                    Final update: More than 160 exhibitors on tap for Premarket event
+                                </a>
+                                <div class="news-item__content-description">
+                                    Premarket is designed to provide furniture retailers with a preview of upcoming High Point Market introductions. These extended appointments allow attending retailers to experience a more in-depth showroom visit and free up their schedule when they return to High Point during market to be able to visit other vendors.
+                                </div>
+                                <a href="" class="news-item__content-showMoreBtn">Detail <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                            </div>
+                        </li>
+                    </ul>
+            
+                    <div class="swiper-pagination show-on-mobile"></div>
+                    <ion-icon name="chevron-forward-outline" class="news-navBtn news-navBtn-next"></ion-icon>
+                </div>
+            </div>
+            <!-- --------------------------------------- -->
+            <!-- partners -->
+            <div class="partners ">
+                <div class="title">
+                    <h3>Partners</h3>
+                </div>
+                <div class="partners-container">
+                    <ul class="partners-list swiper-wrapper">
+                        <li class="partners-item swiper-slide">
+                            <a href="" class="partners-item__link">
+                                <img src="./images/partners/partner-img-1.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="partners-item swiper-slide">
+                            <a href="" class="partners-item__link">
+                                <img src="./images/partners/partner-img-2.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="partners-item swiper-slide">
+                            <a href="" class="partners-item__link">
+                                <img src="./images/partners/partner-img-3.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="partners-item swiper-slide">
+                            <a href="" class="partners-item__link">
+                                <img src="./images/partners/partner-img-4.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="partners-item swiper-slide">
+                            <a href="" class="partners-item__link">
+                                <img src="./images/partners/partner-img-5.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="partners-item swiper-slide">
+                            <a href="" class="partners-item__link">
+                                <img src="./images/partners/partner-img-6.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="partners-item swiper-slide">
+                            <a href="" class="partners-item__link">
+                                <img src="./images/partners/partner-img-7.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="partners-item swiper-slide">
+                            <a href="" class="partners-item__link">
+                                <img src="./images/partners/partner-img-8.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="partners-item swiper-slide">
+                            <a href="" class="partners-item__link">
+                                <img src="./images/partners/partner-img-9.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="partners-item swiper-slide">
+                            <a href="" class="partners-item__link">
+                                <img src="./images/partners/partner-img-10.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- --------------------------------------- -->
+        </div>
+
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="footer-container">
+                    <div class="footer-top row">
+                        <div class="col l-2-4 m-6 s-6 ">
+                            <div class="footer-top-item">
+                                <img src="./images/logo.png" alt="" class="footer-logo">
+                                <ul class="footer-info">
+                                    <li class="footer-info-item">
+                                        <ion-icon name="map-outline"></ion-icon>
+                                        Thoi Long, O Mon, Can Tho
+                                    </li>
+                                    <li class="footer-info-item">
+                                        <ion-icon name="call-outline"></ion-icon>
+                                        <a href="tel:0796863658">0796863658</a>
+                                    </li>
+                                    <li class="footer-info-item">
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                        <a href="mailto: phuocloi11223@gmail.com">phuocloi11223@gmail.com</a>
+                                    </li>
+                                    <li class="footer-info-item">
+                                        <ion-icon name="time-outline"></ion-icon>
+                                        7:00AM - 21:00PM
+                                    </li>
+                                </ul>
+                                <ul class="social-list">
+                                    <li class="social-item"><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+                                    <li class="social-item"><a href=""><ion-icon name="logo-youtube"></ion-icon></a></li>
+                                    <li class="social-item"><a href=""><ion-icon name="logo-pinterest"></ion-icon></a></li>
+                                    <li class="social-item"><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                                    <li class="social-item"><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-6 s-6 ">
+                            <div class="footer-top-item">
+                                <ul>
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">All Products</a></li>
+                                    <li><a href="">Posts</a></li>
+                                    <li><a href="">Contact</a></li>
+                                    <li><a href="">Search</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-6 s-6 ">
+                            <div class="footer-top-item">
+                                <ul>
+                                    <li><a href="">Introduce</a></li>
+                                    <li><a href="">Return Goods</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li><a href="">Complaints Policy</a></li>
+                                    <li><a href="">Terms of Service</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-6 s-6 ">
+                            <div class="footer-top-item">
+                                <ul>
+                                    <li><a href="">Difference of MyFurniture</a></li>
+                                    <li><a href="">Sell with MyFurniture</a></li>
+                                    <li><a href="">Frequently asked questions</a></li>
+                                    <li><a href="">Payment Guide</a></li>
+                                    <li><a href="">Return Guide</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-6 s-6 hide-on-tablet hide-on-mobile">
+                            <div class="footer-top-item">
+                                <img src="./images/logo-footer.jfif" alt="" class="footer-sub-logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom row">
+                        <div class="copyright">© 2021 - All rights reserved by F1GEN TECHNOLOGY CO., LTD. Power by Haravan</div>
+                        <div class="payment-info">
+                            <a href="/"><img src="./images/payment/payment-img-1.svg" alt=""></a>
+                            <a href=""><img src="./images/payment/payment-img-2.svg" alt=""></a>
+                            <a href=""><img src="./images/payment/payment-img-3.svg" alt=""></a>
+                            <a href=""><img src="./images/payment/payment-img-4.svg" alt=""></a>
+                            <a href=""><img src="./images/payment/payment-img-5.svg" alt=""></a>
+                            <a href=""><img src="./images/payment/payment-img-6.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="fixed-sidebar">
+            <div class="fixed-social-network hide-on-mobile">
+                <ul class="fixed-social-list">
+                    <li class="fixed-social-item">
+                        <a href="" class="fixed-social-link">
+                            <img src="./images/fixed-social-network/img-1.svg" alt="" class="fixed-social-img">
+                            Zalo
+                        </a>
+                    </li>
+                    <li class="fixed-social-item">
+                        <a href="" class="fixed-social-link">
+                            <img src="./images/fixed-social-network/img-2.svg" alt="" class="fixed-social-img">
+                            Messenger
+                        </a>
+                    </li>
+                    <li class="fixed-social-item">
+                        <a href="" class="fixed-social-link">
+                            <img src="./images/fixed-social-network/img-3.svg" alt="" class="fixed-social-img">
+                            Youtube
+                        </a>
+                    </li>
+                    <li class="fixed-social-item">
+                        <a href="" class="fixed-social-link">
+                            <img src="./images/fixed-social-network/img-4.svg" alt="" class="fixed-social-img">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="fixed-social-item">
+                        <a href="" class="fixed-social-link">
+                            <img src="./images/fixed-social-network/img-5.svg" alt="" class="fixed-social-img">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="fixed-social-item">
+                        <a href="" class="fixed-social-link">
+                            <img src="./images/fixed-social-network/img-6.svg" alt="" class="fixed-social-img">
+                            Tiktok
+                        </a>
+                    </li>
+                    <li class="fixed-social-item">
+                        <a href="" class="fixed-social-link">
+                            <img src="./images/fixed-social-network/img-7.svg" alt="" class="fixed-social-img">
+                            Shopee
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="back-to-top-btn">
+                <ion-icon name="chevron-up-outline"></ion-icon>
+            </div>
+        </div>
+
+        <!-- modal -->
+        <div class="modal-form">
+            <div class="overlay"></div>
+            <div class="form ">
+                <ion-icon name="close-outline" class="form-close-btn"></ion-icon>
+                <div class="form-sidebar">
+                    <img src="./images/logo.png" alt="" class="form-logo">
+                    <div class="form-switch-btn active">Login</div>
+                    <div class="form-switch-btn">Forgot Password</div>
+                    <div class="form-switch-btn">Register</div>
+                </div>
+                <div class="form-content active">
+                    <div class="form-content__heading">Login</div>
+                    <div class="form-content__main">
+                        <div class="form-content__group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-content__group">
+                            <label for="email">Password</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </div>
+                    <button class="form-content__submit-btn">Login</button>
+                </div>
+
+                <div class="form-content">
+                    <div class="form-content__heading">forgot password</div>
+                    <div class="form-content__main">
+                        <div class="form-content__group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        
+                    </div>
+                    <button class="form-content__submit-btn">Submit</button>
+                </div>
+
+                <div class="form-content">
+                    <div class="form-content__heading">Register</div>
+                    <form class="form-content__main">
+                        <div class="form-content__group">
+                            <label for="first-name">First name</label>
+                            <input type="text" name="first-name" id="first-name" required>
+                        </div>
+                        <div class="form-content__group">
+                            <label for="last-name">Last name</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
+                        <div class="form-content__group">
+                            <label for="phone">Number phone</label>
+                            <input type="phone" name="phone" id="phone">
+                        </div>
+
+                        <div class="form-content__group">
+                            <label for="">Gender</label>
+                            <div class="radio-wrap">
+                                <div class="radio-group">
+                                    <input type="radio" name="gender" id="femail">
+                                    <label for="femail">Femail</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" name="gender" id="mail">
+                                    <label for="mail">Mail</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-content__group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+
+                        <div class="form-content__group">
+                            <label for="email">Password</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+
+                        <button class="form-content__submit-btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-sidebar">
+            <div class="overlay"></div>
+            <div class="sidebar-container">
+                <div class="sidebar-content active">
+                    <div class="sidebar-heading">
+                        <ion-icon name="close-outline" class="close-modal-sidebar"></ion-icon>
+                        <span>favorite</span>
+                    </div>
+                    <div class="sidebar-main">
+                        <ul class="wish-list">
+                            <li class="wish-item">
+                                <a href="" class="wish-item__thumb">
+                                    <img src="./images/product/product1-a.jpg" alt="">
+                                </a>
+                                <div class="wish-item__info">
+                                    <div class="wish-item__info-name">Cassette Bag</div>
+                                    <div class="wish-item__info-price">
+                                        <span class="wish-item__info-price-current">1.990.000đ</span>
+                                        <span class="wish-item__info-price-old">2.990.000đ</span>
+                                    </div>
+                                    <div class="wish-item__info-actions">
+                                        <div class="wish-item__info-counter">
+                                            <div class="decrease-btn"><ion-icon name="remove-circle-outline"></ion-icon></div>
+                                            <div class="current-amount"><input type="number" name="" id="" value="1"></div>
+                                            <div class="increase-btn"><ion-icon name="add-circle-outline"></ion-icon></div>
+                                        </div>
+
+                                        <div class="wish-item__info-delete">
+                                            <ion-icon name="trash-bin-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                    <div class="wish-item__info-btn">add to cart</div>
+
+                                </div>
+                            </li>
+                            <li class="wish-item">
+                                <a href="" class="wish-item__thumb">
+                                    <img src="./images/product/product1-a.jpg" alt="">
+                                </a>
+                                <div class="wish-item__info">
+                                    <div class="wish-item__info-name">Cassette Bag</div>
+                                    <div class="wish-item__info-price">
+                                        <span class="wish-item__info-price-current">1.990.000đ</span>
+                                        <span class="wish-item__info-price-old">2.990.000đ</span>
+                                    </div>
+                                    <div class="wish-item__info-actions">
+                                        <div class="wish-item__info-counter">
+                                            <div class="decrease-btn"><ion-icon name="remove-circle-outline"></ion-icon></div>
+                                            <div class="current-amount"><input type="number" name="" id="" value="1"></div>
+                                            <div class="increase-btn"><ion-icon name="add-circle-outline"></ion-icon></div>
+                                        </div>
+
+                                        <div class="wish-item__info-delete">
+                                            <ion-icon name="trash-bin-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                    <div class="wish-item__info-btn">add to cart</div>
+
+                                </div>
+                            </li>
+                            <li class="wish-item">
+                                <a href="" class="wish-item__thumb">
+                                    <img src="./images/product/product1-a.jpg" alt="">
+                                </a>
+                                <div class="wish-item__info">
+                                    <div class="wish-item__info-name">Cassette Bag</div>
+                                    <div class="wish-item__info-price">
+                                        <span class="wish-item__info-price-current">1.990.000đ</span>
+                                        <span class="wish-item__info-price-old">2.990.000đ</span>
+                                    </div>
+                                    <div class="wish-item__info-actions">
+                                        <div class="wish-item__info-counter">
+                                            <div class="decrease-btn"><ion-icon name="remove-circle-outline"></ion-icon></div>
+                                            <div class="current-amount"><input type="number" name="" id="" value="1"></div>
+                                            <div class="increase-btn"><ion-icon name="add-circle-outline"></ion-icon></div>
+                                        </div>
+
+                                        <div class="wish-item__info-delete">
+                                            <ion-icon name="trash-bin-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                    <div class="wish-item__info-btn">add to cart</div>
+
+                                </div>
+                            </li>
+                            <li class="wish-item">
+                                <a href="" class="wish-item__thumb">
+                                    <img src="./images/product/product1-a.jpg" alt="">
+                                </a>
+                                <div class="wish-item__info">
+                                    <div class="wish-item__info-name">Cassette Bag</div>
+                                    <div class="wish-item__info-price">
+                                        <span class="wish-item__info-price-current">1.990.000đ</span>
+                                        <span class="wish-item__info-price-old">2.990.000đ</span>
+                                    </div>
+                                    <div class="wish-item__info-actions">
+                                        <div class="wish-item__info-counter">
+                                            <div class="decrease-btn"><ion-icon name="remove-circle-outline"></ion-icon></div>
+                                            <div class="current-amount"><input type="number" name="" id="" value="1"></div>
+                                            <div class="increase-btn"><ion-icon name="add-circle-outline"></ion-icon></div>
+                                        </div>
+
+                                        <div class="wish-item__info-delete">
+                                            <ion-icon name="trash-bin-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                    <div class="wish-item__info-btn">add to cart</div>
+
+                                </div>
+                            </li>
+                            <li class="wish-item">
+                                <a href="" class="wish-item__thumb">
+                                    <img src="./images/product/product1-a.jpg" alt="">
+                                </a>
+                                <div class="wish-item__info">
+                                    <div class="wish-item__info-name">Cassette Bag</div>
+                                    <div class="wish-item__info-price">
+                                        <span class="wish-item__info-price-current">1.990.000đ</span>
+                                        <span class="wish-item__info-price-old">2.990.000đ</span>
+                                    </div>
+                                    <div class="wish-item__info-actions">
+                                        <div class="wish-item__info-counter">
+                                            <div class="decrease-btn"><ion-icon name="remove-circle-outline"></ion-icon></div>
+                                            <div class="current-amount"><input type="number" name="" id="" value="1"></div>
+                                            <div class="increase-btn"><ion-icon name="add-circle-outline"></ion-icon></div>
+                                        </div>
+
+                                        <div class="wish-item__info-delete">
+                                            <ion-icon name="trash-bin-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                    <div class="wish-item__info-btn">add to cart</div>
+
+                                </div>
+                            </li>
+                            <li class="wish-item">
+                                <a href="" class="wish-item__thumb">
+                                    <img src="./images/product/product1-a.jpg" alt="">
+                                </a>
+                                <div class="wish-item__info">
+                                    <div class="wish-item__info-name">Cassette Bag</div>
+                                    <div class="wish-item__info-price">
+                                        <span class="wish-item__info-price-current">1.990.000đ</span>
+                                        <span class="wish-item__info-price-old">2.990.000đ</span>
+                                    </div>
+                                    <div class="wish-item__info-actions">
+                                        <div class="wish-item__info-counter">
+                                            <div class="decrease-btn"><ion-icon name="remove-circle-outline"></ion-icon></div>
+                                            <div class="current-amount"><input type="number" name="" id="" value="1"></div>
+                                            <div class="increase-btn"><ion-icon name="add-circle-outline"></ion-icon></div>
+                                        </div>
+
+                                        <div class="wish-item__info-delete">
+                                            <ion-icon name="trash-bin-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                    <div class="wish-item__info-btn">add to cart</div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar-content">
+                    <div class="sidebar-heading">
+                        <ion-icon name="close-outline" class="close-modal-sidebar"></ion-icon>
+                        <span>cart</span>
+                    </div>
+                    <div class="sidebar-main">
+                        <div class="cart-total">
+                            <span>Total:</span>
+                            <span class="cart-total__money">0đ</span>
+                        </div>
+                        <div class="sidebar-main__btn  sidebar-main__btn--black">check cart</div>
+                        <div class="sidebar-main__btn">pay</div>
+
+                    </div>
+                </div>
+                <div class="sidebar-content">
+                    <div class="sidebar-heading">
+                        <ion-icon name="close-outline" class="close-modal-sidebar"></ion-icon>
+                        <span>compare list</span>
+                    </div>
+                    <div class="sidebar-main">
+                        <div class="sidebar-main__btn">compare now</div>
+                    </div>
+                </div>
+                <div class="sidebar-content">
+                    <div class="sidebar-heading">
+                        <ion-icon name="close-outline" class="close-modal-sidebar"></ion-icon>
+                        <span>menu</span>
+                    </div>
+                    <div class="sidebar-main">
+                        <div class="sidebar-main-input">
+                            <input type="text" placeholder="Find Products ..." required>
+                            <button><ion-icon name="search-outline"></ion-icon></button>
+                        </div>
+
+                        <ul class="sidebar-main-list">
+                            <li class="sidebar-main-item">
+                                <a href="" class="sidebar-main-link">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="sidebar-main-item has-subMenu">
+                                <a href="" class="sidebar-main-link">
+                                    Decorations
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </a>
+
+                                <ul class="sidebar-main-subList">
+                                    <li class="sidebar-main-item has-subMenu">
+                                        <a href="" class="sidebar-main-link">
+                                            mirror
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </a>
+
+                                        <ul class="sidebar-main-subList">
+                                            <li class="sidebar-main-item">
+                                                <a href="" class="sidebar-main-link">
+                                                    Mirror on wall
+                                                </a>
+                                            </li>
+                                            <li class="sidebar-main-item">
+                                                <a href="" class="sidebar-main-link">
+                                                    Full-length mirror
+                                                </a>
+                                            </li>
+                                            <li class="sidebar-main-item">
+                                                <a href="" class="sidebar-main-link">
+                                                    Makeup mirror
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sidebar-main-item has-subMenu">
+                                        <a href="" class="sidebar-main-link">
+                                            clock
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </a>
+
+                                        <ul class="sidebar-main-subList">
+                                            <li class="sidebar-main-item">
+                                                <a href="" class="sidebar-main-link">
+                                                    Clock watcher
+                                                </a>
+                                            </li>
+                                            <li class="sidebar-main-item">
+                                                <a href="" class="sidebar-main-link">
+                                                    Alarm clock
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sidebar-main-item">
+                                        <a href="" class="sidebar-main-link">
+                                            picture
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-main-item">
+                                        <a href="" class="sidebar-main-link">
+                                            candle
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-main-item">
+                                        <a href="" class="sidebar-main-link">
+                                            oil
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-main-item">
+                                        <a href="" class="sidebar-main-link">
+                                            bonsai
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-main-item">
+                                        <a href="" class="sidebar-main-link">
+                                            vase
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-main-item has-subMenu">
+                                <a href="" class="sidebar-main-link">
+                                    Houseware
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </a>
+
+                                <ul class="sidebar-main-subList">
+                                    <li class="sidebar-main-item">
+                                        <a href="" class="sidebar-main-link">
+                                            Drinking utensils
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-main-item">
+                                        <a href="" class="sidebar-main-link">
+                                            Kitchen utensils
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-main-item">
+                                        <a href="" class="sidebar-main-link">
+                                            Food preservation
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-main-item">
+                                        <a href="" class="sidebar-main-link">
+                                            Tableware
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-main-item has-subMenu">
+                                <a href="" class="sidebar-main-link">
+                                    Furniture
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </a>
+
+                                <ul class="sidebar-main-subList">
+                                    <li class="sidebar-main-item has-subMenu">
+                                        <a href="" class="sidebar-main-link">
+                                            Lamp
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </a>
+
+                                        <ul class="sidebar-main-subList">
+                                            <li class="sidebar-main-item">
+                                                <a href="" class="sidebar-main-link">
+                                                    Night Light
+                                                </a>
+                                            </li>
+                                            <li class="sidebar-main-item">
+                                                <a href="" class="sidebar-main-link">
+                                                    Decorative Light
+                                                </a>
+                                            </li>
+                                            <li class="sidebar-main-item">
+                                                <a href="" class="sidebar-main-link">
+                                                    Chandelier
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sidebar-main-item">
+                                        <a href="" class="sidebar-main-link">
+                                            Carpet
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-main-item">
+                                        <a href="" class="sidebar-main-link">
+                                            Duvet
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-main-item">
+                                        <a href="" class="sidebar-main-link">
+                                            Pillow
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-main-item">
+                                <a href="" class="sidebar-main-link">
+                                    Storage
+                                </a>
+                            </li>
+                            <li class="sidebar-main-item">
+                                <a href="" class="sidebar-main-link">
+                                    Bedding
+                                </a>
+                            </li>
+                            <li class="sidebar-main-item">
+                                <a href="" class="sidebar-main-link">
+                                    Lamp
+                                </a>
+                            </li>
+                            <li class="sidebar-main-item">
+                                <a href="" class="sidebar-main-link">
+                                    Carpet
+                                </a>
+                            </li>
+                            <li class="sidebar-main-item">
+                                <a href="" class="sidebar-main-link">
+                                    News
+                                </a>
+                            </li>
+                            <li class="sidebar-main-item">
+                                <a href="" class="sidebar-main-link">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mobile-support-btn"><ion-icon name="list-circle-outline"></ion-icon></div>
+        <div class="mobile-support">
+            <!-- <img src="./images/fixed-social-network/img-7.svg" alt=""> -->
+            <ul class="mobile-support-list">
+                <li class="mobile-support-item">
+                    <a href="" class="mobile-support-link"><ion-icon name="call-outline"></ion-icon></a>
+                </li>
+                <li class="mobile-support-item" style="background-image: url('./images/fixed-social-network/img-7.svg');">
+                    <a href="" class="mobile-support-link"></a>
+                </li>
+                <li class="mobile-support-item" style="background-image: url('./images/fixed-social-network/img-1.svg');">
+                    <a href="" class="mobile-support-link"></a>
+                </li>
+                <li class="mobile-support-item">
+                    <a href="" class="mobile-support-link"><ion-icon name="arrow-undo-outline"></ion-icon></a>
+                </li>
+            </ul>
+        </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+.news {
+    width: 1200px;
+    max-width: 100%;
+    margin: 30px auto;
+    position: relative;
+}
+
+.news-container{
+    width: 1110px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.news-list{
+    display: flex;
+}
+
+.news-item{
+    user-select: none;
+    width: 350px;
+}
+
+.news-item__thumb{
+    user-select: none;
+    img{
+        width: 100%;
+        height: 230px;
+    }
+}
+
+
+.news-item__content-info{
+    color: #666;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    ion-icon{
+        margin-right: 4px;
+    }
+}
+
+.news-item__content-info-author{
+    display: flex;
+    align-items: center;
+    ion-icon{
+        transform: translateY(-1px);
+    }
+}
+
+.news-item__content-info-date{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.news-item__content-title{
+    display: block;
+    font-size: 18px;
+    color: #333;
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-align: justify;
+    
+}
+
+.news-item__content-description{
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    position: relative;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    text-align: justify;
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -15px;
+        width: 60px;
+        background-color: #222;
+        height: 1px;
+    }
+}
+
+.news-item__content-showMoreBtn{
+    display: flex;
+    align-items: center;
+    color: #555;
+    cursor: pointer;
+    ion-icon{
+        margin-left: 2px;
+        transition: .5s;
+    }
+    &:hover ion-icon{
+        transform: translateX(10px);
+    }
+}
+
+.news-navBtn{
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    cursor: pointer;
+}
+.news-navBtn-next{
+    right: 0;
+}
+.news-navBtn-prev{
+    left: 0;
+}
+

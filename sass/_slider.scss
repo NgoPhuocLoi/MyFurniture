@@ -1,0 +1,68 @@
+.slider{
+    overflow: hidden;
+    // width: 100vw;
+    margin-top: $header-container-height + $header-nav-height;
+}
+
+.slides{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 500%;
+    input{
+        display: none;
+    }
+}
+
+.slide{
+    width: 20%;
+    transition: .8s;
+}
+
+.slide-img{
+    width: 100%;
+    height: 395px;
+}
+
+.nav-manual{
+    width: 100px;
+    position: absolute;
+    left: 50vw;
+    bottom: 20px;
+    display: flex;
+}
+
+.manual-btn{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.3);
+    margin-right: 18px;
+    cursor: pointer;
+    transition: .4s;
+    &:hover{
+        background-color: rgba(0,0,0,.6);
+    }
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio1:checked ~ .nav-manual .manual-btn[for="radio1"]{
+    background-color: rgba(0,0,0,.6);  
+}
+#radio2:checked ~ .nav-manual .manual-btn[for="radio2"]{
+    background-color: rgba(0,0,0,.6);  
+}
+#radio3:checked ~ .nav-manual .manual-btn[for="radio3"]{
+    background-color: rgba(0,0,0,.6);  
+}

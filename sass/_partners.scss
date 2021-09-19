@@ -1,0 +1,35 @@
+.partners {
+    width: 1200px;
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+.partners-container{
+    width: 1135px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.partners-list{
+    width: 100%;
+    display: flex;
+}
+
+.partners-item{
+    width: 133px;
+    user-select: none;
+}
+
+.partners-item__link{
+    display: block;
+    width: 133px;
+    img{
+        width: 100%;
+        opacity: .5;
+        transition: .3s;
+    }
+
+    &:hover img {
+        opacity: 1;
+    }
+}
